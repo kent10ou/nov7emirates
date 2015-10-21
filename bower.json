@@ -1,0 +1,24 @@
+{
+	"lib": {
+		"name": "bower-rails generated lib assets",
+		"dependencies": {
+		}
+	},
+
+	"vendor": {
+		"name": "bower-rails generated vendor assets",
+		"dependencies": {
+			"angular": "latest",
+			"angulartics": "latest",
+			"angular-animate": "latest",
+			"angular-bootstrap": "latest",
+			"angular-lazytube": "latest",
+			"angular-scroll": "latest",
+			"angular-touch": "latest",
+			"angular-ui-router": "latest",
+			"lodash": "latest",
+			"modernizr": "latest",
+			"ngstorage": "latest"
+		}
+	}
+}

@@ -1,0 +1,15 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: dev_db
+  pool: 5
+  username: wilsonlee
+  password: password
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: prod_db
+  pool: 5
+  username: wilsonlee
+  password: password

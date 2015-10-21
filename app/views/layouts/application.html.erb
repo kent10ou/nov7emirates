@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang='en' class='ie8'> <![endif]-->
+<!--[if IE 9]> <html lang='en' class='ie9'> <![endif]-->
+<!--[if !IE]><!--> <html lang='en'> <!--<![endif]-->
+
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0'/>
+		<meta name='description' content='Henry Precision Machining fabricates a comprehensive range of close tolerance component parts from steel, aluminum, stainless, brass, copper and plastic. Henry Precision Machining prides itself on its unparalleled precision machining techniques, quick turnaround times and the highest quality, complete-to-print parts. Henry Precision Machining is proficient at producing low volume prototype to large volume runs for hydraulic, defense, aerospace, medical, instrumentation and other industries.'>
+		<meta name='author' content='Henry Precision Machining'>
+
+		<title>Henry Precision Machining</title>
+
+		<link href='/assets/favicon.ico' rel='shortcut icon'>
+		<link rel='apple-touch-icon' href='assets/icon.png' />
+		<link rel='android-touch-icon' href='assets/icon.png' />
+
+		<!-- Font Awesome -->
+		<link rel='stylesheet' type='text/css' href='//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+		
+		<!-- Bootswatch (Readable) -->
+		<link rel='stylesheet' type='text/css' href='//maxcdn.bootstrapcdn.com/bootswatch/3.3.5/readable/bootstrap.min.css'>
+
+		<!-- Application CSS -->
+		<%= stylesheet_link_tag 'application', media: 'all' %>
+
+		<!-- Google Analytics Script -->
+		<script>
+			// (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			// 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			// 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			// })(window,document,'script','//www.google-analytics.com/analytics.js','ga')
+			// ga('create', 'UA-53346812-1', 'auto')
+		</script>
+
+		<!-- Allows for rendering in older versions of IE -->
+		<!--[if lt IE 9]><script src='http://html5shim.googlecode.com/svn/trunk/html5.js'></script><![endif]-->
+	</head>
+
+	<base href='/'>
+
+	<body>
+		<%= yield %>
+
+		<!-- Application JS -->
+		<%= javascript_include_tag 'application' %>
+	</body>
+</html>
