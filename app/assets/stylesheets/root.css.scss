@@ -1,28 +1,31 @@
 $red: #C21221;
 $lightGray: #D3D3D3;
 
+/* Top row on main page */
+#topRow {
+	height: 600px;
+	background: url('https://d2oku4nz4qgjsk.cloudfront.net/7.JPG');
+	background-repeat: no-repeat;
+	background-size: 100%;
+
+	.jumbotron {
+		background-color: rgba(0, 0, 0, 0);
+		text-align: center;
+		h1 {
+			color: $red;
+		}
+		p {
+			color: white;
+		}
+	}
+}
+
+
+
+
 .container {
 	margin-top: 50px;
 
-	#headerRow {
-		img {
-			width: 100%;
-		}
-		li {
-			cursor: pointer;
-			.fa {
-				padding-right: 5px;
-			}
-			a {
-				color: black;
-			}
-			a:hover {
-				color: white;
-				background: $red;
-			}
-		}
-
-	}
 
 	#navRow {
 		margin-top: 20px;
