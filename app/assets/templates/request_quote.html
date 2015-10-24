@@ -22,6 +22,17 @@
 					<input type='tel' ng-model='request.phone' placeholder='Phone #' class='form-control' required />
 				</div>
 				<textarea rows='4' ng-model='request.message' placeholder='Project description' class='form-control'></textarea>
+				<table ng-click='toggleUrgent()'>
+					<tr>
+						<td>
+							<i class='fa fa-check' ng-show='request.urgent'></i>
+						</td>
+						<td>
+							Urgent Job?
+						</td>
+					</tr>
+				</table>
+				 <input type='file' name='files' multiple>
 				<button class='btn btn-danger' ng-disabled='requestForm.$invalid || requestForm.$pristine'>Submit</button>
 			</form>
 		</div>
