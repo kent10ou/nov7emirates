@@ -1,0 +1,267 @@
+$red: #C21221;
+$lightGray: #f1f1f1;
+$gray: #545454;
+$darkGray: #212121;
+* {
+	font-family: Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif;	
+}
+
+
+/* ================================================== */
+/* ===================== BUTTON ===================== */
+/* ================================================== */
+.btn-danger {
+	background: $red
+}
+
+
+/* ================================================== */
+/* ===================== HEADER ===================== */
+/* ================================================== */
+#header {
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 10px 20px 10px 20px;
+	img {
+		height: 55px;
+		margin-left: 40px;
+		cursor: pointer;
+	}
+	#links {
+		float: right;
+		padding-top: 15px;
+		a {
+			padding-right: 40px;
+			font-size: large;
+			font-weight: bold;
+			color: white;
+			cursor: pointer;
+			.fa {
+				padding-right: 10px;
+			}
+		}
+		a:hover {
+			color: $red;
+			text-shadow: 1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white;
+			text-decoration: none;
+		}
+	}
+}
+
+
+/* ================================================== */
+/* ===================== FOOTER ===================== */
+/* ================================================== */
+#footer {
+	background: $red;
+	padding: 15px 50px 15px 50px;
+	color: white;
+	font-size: small;
+	.fa {
+		padding-right: 10px;
+	}
+	.fa-phone, .fa-envelope {
+		padding-left: 30px;
+	}
+	.emailLink:hover {
+		color: $darkGray
+	}
+}
+
+
+/* ====================================================== */
+/* ===================== EMAIL LINK ===================== */
+/* ====================================================== */
+.emailLink {
+	cursor: pointer;
+}
+
+
+/* ====================================================== */
+/* ====================== OUR WORK ====================== */
+/* ====================================================== */
+#ourWork {
+	padding-top: 112px;
+	padding-bottom: 40px;
+	.col-sm-4 {
+		padding: 10px;
+		.box {
+			width: 100%;
+			padding-bottom: 100%;
+			position: relative;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+		}
+		.title {
+			background-color: rgba(0, 0, 0, 0.6);
+			position: absolute;
+			top: 10px;
+			width: calc(100% - 20px);
+			padding: 10px;
+			h4 {
+				margin: 0px;
+				color: white;
+				text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+			}
+		}
+	}
+}
+
+/* ====================================================== */
+/* =================== REQUEST QUOTE ==================== */
+/* ====================================================== */
+#requestQuote {
+	padding-top: 122px;
+	padding-bottom: 50px;
+	h3 {
+		font-weight: bold;
+		color: $red;
+		text-align: center;
+		margin-top: 0px;
+	}
+	#formCol {
+		form {
+			padding: 20px;
+			background: $lightGray;
+			.input-group {
+				width: 100%;
+				margin-bottom: 5px;
+				.input-group-addon {
+					width: 40px;
+					background: $gray;
+					color: white;
+				}
+			}
+			button {
+				margin-top: 10px;
+				width: 100%;
+			}
+		}
+	}
+	#contactCol {
+		#map {
+			width: 100%;
+			height: 350px;
+		}
+		span {
+			font-size: smaller;
+			display: block;
+			padding-bottom: 5px;
+			.fa {
+				text-align: center;
+				width: 25px;
+				font-weight: bold;
+				color: $red;
+				padding-right: 10px;
+			}
+		}
+		.emailLink:hover {
+			color: $red;
+			.fa {
+				color: $darkGray
+			}
+		}
+	}
+}
+
+
+/* ====================================================== */
+/* ======================== ROOT ======================== */
+/* ====================================================== */
+#root {
+	#firstRow {
+		height: 600px;
+		background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://d2oku4nz4qgjsk.cloudfront.net/10.JPG');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		text-align: center;
+		.jumbotron {
+			padding-top: 150px;
+			background-color: rgba(0, 0, 0, 0);
+			text-align: center;
+			h1 {
+				font-weight: bold;
+				color: $red;
+				text-shadow: 1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white;
+			}
+			p {
+				color: white;
+				font-weight: bold;
+			}
+		}
+	}
+
+	#secondRow {
+		margin-top: 40px;
+		margin-bottom: 40px;
+		img {
+			width: 100%;
+		}
+		h1 {
+			margin-top: 0px;
+			color: $red;
+			font-weight: bold;
+		}
+		p {
+			text-align: justify;
+		}
+	}
+
+	#dividerRow {
+		height: 400px;
+		background: url('https://d2oku4nz4qgjsk.cloudfront.net/7.JPG');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center; 
+		text-align: center;
+		h1 {
+			margin-top: 140px;
+			margin-bottom: 20px;
+			font-weight: bold;
+			color: white;
+		}
+	}
+
+	#thirdRow {
+		margin-top: 40px;
+		margin-bottom: 40px;
+		img {
+			width: 100%;
+		}
+		.content {
+			background: $lightGray;
+			padding: 10px;
+			h2 {
+				margin-top: 0px;
+				color: $red;
+				font-weight: bold;
+			}
+			p {
+				text-align: justify;
+				margin-bottom: 0px;
+			}
+		}
+		button {
+			margin-top: 40px;
+			width: 100%;
+		}
+	}
+
+	#mapRow {
+		padding: 0px;
+		margin-bottom: 40px;
+		.overlay {
+			background: transparent;
+			position: relative;
+			width: 100%;
+			height: 400px;
+			top: 400px;
+			margin-top: -400px;
+		}
+		#map {
+			height: 400px;
+			width: 100%;
+		}
+	}
+}

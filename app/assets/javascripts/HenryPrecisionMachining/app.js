@@ -1,6 +1,7 @@
 // Declare application & add dependencies
 var app = angular.module('HenryPrecisionMachining', [
 	'angulartics', // Google Analytics
+	'countTo', // Count to
 	'duScroll', // Angular scroll
 	'ngStorage', // Allow for true local storage
 	'ngTouch', // Allow for Angular Touch

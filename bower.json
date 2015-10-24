@@ -12,6 +12,7 @@
 			"angulartics": "latest",
 			"angular-animate": "latest",
 			"angular-bootstrap": "latest",
+			"angular-count-to": "latest",
 			"angular-lazytube": "latest",
 			"angular-scroll": "latest",
 			"angular-touch": "latest",

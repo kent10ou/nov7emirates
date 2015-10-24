@@ -1,8 +1,14 @@
 <div ng-include src='"_header.html"'></div>
-<div class='container'>
-	<div class='row' id='ourWork'>
+
+<div class='container' id='ourWork'>
+	<div class='row'>
 		<div class='col-sm-4' ng-repeat='pic in pics'>
-			<img ng-src='{{pic}}' />
+			<div class='box' ng-style='{{pic}}'></div>
+			<div class='title'>
+				<h4>Title</h4>
+			</div>
 		</div>
 	</div>
 </div>
+
+<div ng-include src='"_footer.html"'></div>

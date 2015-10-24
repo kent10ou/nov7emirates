@@ -8,7 +8,7 @@
 //= require angulartics/dist/angulartics.min
 //= require angular-scroll/angular-scroll.min
 //= require angular-lazytube/angular-lazytube.min
-
+//= require angular-count-to/build/angular-count-to.min
 //= require angular-rails-templates
 //= require_tree ../templates
 //= require_tree ./HenryPrecisionMachining
