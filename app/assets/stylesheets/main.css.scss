@@ -2,13 +2,18 @@ $red: #C21221;
 $lightGray: #f1f1f1;
 $gray: #545454;
 $darkGray: #212121;
+
+
+/* ================================================== */
+/* ====================== FONT ====================== */
+/* ================================================== */
 * {
 	font-family: Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif;	
 }
 
 
 /* ================================================== */
-/* ===================== BUTTON ===================== */
+/* ================== MAIN BUTTON =================== */
 /* ================================================== */
 .btn-danger {
 	background: $red
@@ -21,6 +26,7 @@ $darkGray: #212121;
 #header {
 	background-color: rgba(0, 0, 0, 0.6);
 	padding: 10px 20px 10px 20px;
+	width: 100%;
 	img {
 		height: 55px;
 		margin-left: 40px;
@@ -46,6 +52,43 @@ $darkGray: #212121;
 		}
 	}
 }
+#subheader {
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 10px 20px 10px 20px;
+	width: 100%;
+	display: none;
+	text-align: center;
+	a:first-child {
+		padding-right: 20px
+	}
+	a {
+		font-weight: bold;
+		color: white;
+		cursor: pointer;
+		.fa {
+			padding-right: 10px;
+		}
+	}
+	a:hover {
+		color: $red;
+		text-shadow: 1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white;
+		text-decoration: none;
+	}
+}
+@media (max-width: 690px) {
+	#header {
+		text-align: center;
+		img {
+			margin: 0px auto;
+		}
+		#links {
+			display: none
+		}
+	}
+	#subheader {
+		display: block;
+	}
+}
 
 
 /* ================================================== */
@@ -54,16 +97,33 @@ $darkGray: #212121;
 #footer {
 	background: $red;
 	padding: 15px 50px 15px 50px;
+	width: 100%;
 	color: white;
 	font-size: small;
-	.fa {
-		padding-right: 10px;
-	}
-	.fa-phone, .fa-envelope {
-		padding-left: 30px;
+	span {
+		float: right;
+		.fa {
+			padding-right: 10px;
+		}
+		.fa-phone, .fa-envelope {
+			padding-left: 30px;
+		}
 	}
 	.emailLink:hover {
 		color: $darkGray
+	}
+}
+@media (max-width: 1000px) {
+	#footer {
+		text-align: center;
+		span {
+			padding-top: 5px;
+			display: block;
+			float: none;
+			.fa {
+				padding-left: 0px;
+			}
+		}
 	}
 }
 
@@ -80,9 +140,9 @@ $darkGray: #212121;
 /* ====================== OUR WORK ====================== */
 /* ====================================================== */
 #ourWork {
-	padding-top: 112px;
+	padding-top: 40px;
 	padding-bottom: 40px;
-	.col-sm-4 {
+	.picBox {
 		padding: 10px;
 		.box {
 			width: 100%;
@@ -106,13 +166,26 @@ $darkGray: #212121;
 		}
 	}
 }
+@media (max-width: 690px) {
+	#ourWork {
+		padding-top: 5px;
+		padding-bottom: 5px;
+		.picBox {
+			padding: 5px 10px 5px 10px;
+			.title {
+				top: 5px;
+			}
+		}
+	}
+}
+
 
 /* ====================================================== */
 /* =================== REQUEST QUOTE ==================== */
 /* ====================================================== */
 #requestQuote {
-	padding-top: 122px;
-	padding-bottom: 50px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 	h3 {
 		font-weight: bold;
 		color: $red;
@@ -178,12 +251,23 @@ $darkGray: #212121;
 		}
 	}
 }
+/* Hide contact us column */
+@media (max-width: 1200px) {
+	#requestQuote {
+		#contactCol {
+			display: none;
+		}
+	}
+}
 
 
 /* ====================================================== */
 /* ======================== ROOT ======================== */
 /* ====================================================== */
 #root {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
 	#firstRow {
 		height: 600px;
 		background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://d2oku4nz4qgjsk.cloudfront.net/10.JPG');
@@ -209,7 +293,6 @@ $darkGray: #212121;
 
 	#secondRow {
 		margin-top: 40px;
-		margin-bottom: 40px;
 		img {
 			width: 100%;
 		}
@@ -224,6 +307,7 @@ $darkGray: #212121;
 	}
 
 	#dividerRow {
+		margin-top: 40px;
 		height: 400px;
 		background: url('https://d2oku4nz4qgjsk.cloudfront.net/7.JPG');
 		background-repeat: no-repeat;
@@ -297,6 +381,28 @@ $darkGray: #212121;
 					font-weight: bold;
 				}
 			}
+		}
+	}
+}
+
+/* Adjust h1 divider row */
+/* Add padding between boxes on thirdRow and statsRow */
+@media (max-width: 768px) {
+	#root {
+		#dividerRow {
+			h1 {
+				padding-top: 100px;
+			}
+		}
+	}
+	#thirdRow {
+		.col-sm-4 {
+			margin-bottom: 20px;
+		}
+	}
+	#statsRow {
+		.col-sm-3 {
+			margin-bottom: 20px;
 		}
 	}
 }

@@ -7,4 +7,7 @@ app.controller('RequestQuoteCtrl', ['$scope',
 		$scope.request.urgent = !$scope.request.urgent
 	}
 
+	// Make sure min-height covers full screen
+	document.getElementById('requestQuote').style.minHeight = window.innerHeight - 75 - 48 + 'px'
+
 }])
