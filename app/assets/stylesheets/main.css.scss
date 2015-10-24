@@ -112,6 +112,10 @@ $darkGray: #212121;
 	.emailLink:hover {
 		color: $darkGray
 	}
+	a {
+		text-decoration: none;
+		color: white;
+	}
 }
 @media (max-width: 1000px) {
 	#footer {
@@ -159,6 +163,7 @@ $darkGray: #212121;
 			width: calc(100% - 20px);
 			padding: 10px;
 			h4 {
+				font-weight: 600;
 				margin: 0px;
 				color: white;
 				text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
@@ -223,6 +228,7 @@ $darkGray: #212121;
 				}
 			}
 			button {
+				margin-top: 10px;
 				width: 100%;
 			}
 		}
@@ -310,7 +316,7 @@ $darkGray: #212121;
 	#dividerRow {
 		margin-top: 40px;
 		height: 400px;
-		background: url('https://d2oku4nz4qgjsk.cloudfront.net/7.JPG');
+		background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://d2oku4nz4qgjsk.cloudfront.net/7.JPG');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center; 
