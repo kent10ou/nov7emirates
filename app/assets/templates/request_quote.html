@@ -32,7 +32,7 @@
 						</td>
 					</tr>
 				</table>
-				<button class='btn btn-dark btn-xs' ngf-select ngf-drop ng-model='files' ngf-multiple='true' ngf-keep='distinct'><i class='fa fa-paperclip'></i>Add Files</button>
+				<button class='btn btn-default btn-xs' ngf-select ngf-drop ng-model='files' ngf-multiple='true' ngf-keep='distinct'><i class='fa fa-paperclip'></i>Add Files</button>
 				<span ng-repeat='file in files' class='filenames'><span ng-if='files.length > 1 && $index > 0'>, </span>{{file.name}}</span>
 				<button
 					type='submit'
