@@ -153,9 +153,20 @@ $darkGray: #212121;
 		margin-top: 33px;
 		width: 100% !important;
 	}
+	#closeBtn {
+		cursor: pointer;
+		color: white;
+		text-shadow: 1px 1px 0 $darkGray, -1px -1px 0 $darkGray, 1px -1px 0 $darkGray, -1px 1px 0 $darkGray;
+		position: absolute;
+		top: 26px;
+		right: -40px;
+	}
+	#closeBtn:hover {
+		color: $red
+	}
 	#counter {
 		color: white;
-		background: black;
+		background: $red;
 		padding: 5px;
 		width: 80px;
 		text-align: center;
@@ -179,7 +190,7 @@ $darkGray: #212121;
 		text-shadow: 1px 1px 0 $darkGray, -1px -1px 0 $darkGray, 1px -1px 0 $darkGray, -1px 1px 0 $darkGray;
 	}
 	.fa-chevron-left:hover, .fa-chevron-right:hover {
-		color: $lightGray;
+		color: $red;
 	}
 }
 
