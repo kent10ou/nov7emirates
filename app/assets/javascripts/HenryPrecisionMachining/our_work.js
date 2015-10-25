@@ -9,7 +9,9 @@ app.controller('OurWorkCtrl', ['Lightbox', '$scope',
 	}
 
 	$scope.openLightboxModal = function (index) {
-		Lightbox.openModal(images, index)
+		if(window.innerWidth > 989) {
+			Lightbox.openModal(images, index)
+		}
 	}
 
 }])
