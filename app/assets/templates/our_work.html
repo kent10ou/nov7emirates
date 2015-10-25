@@ -3,7 +3,9 @@
 <div class='container' id='ourWork'>
 	<div class='row'>
 		<div class='col-md-4 picBox' ng-repeat='pic in pics' ng-click='openLightboxModal($index)'>
-			<div class='box' ng-style='{{pic}}'></div>
+			<div class='box' ng-style='{{pic}}'>
+				<div class='overlay'></div>
+			</div>
 		</div>
 	</div>
 </div>

@@ -5,8 +5,12 @@
 			<span>{{Lightbox.imageCaption}}</span>
 		</div>
 
+		<!-- Left and Right Arrows -->
 		<i class='fa fa-4x fa-chevron-right' ng-click='Lightbox.nextImage()'></i>
 		<i class='fa fa-4x fa-chevron-left' ng-click='Lightbox.prevImage()'></i>
+
+		<!-- Counter -->
+		<span id='counter'>{{(Lightbox.index + 1) + ' of ' + Lightbox.images.length}}</span>
 
 		<!-- Image -->
 		<img ng-if='!Lightbox.isVideo(Lightbox.image)' lightbox-src='{{Lightbox.imageUrl}}'>
