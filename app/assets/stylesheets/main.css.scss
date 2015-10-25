@@ -149,6 +149,7 @@ $darkGray: #212121;
 	.picBox {
 		padding: 10px;
 		.box {
+			cursor: zoom-in;
 			width: 100%;
 			padding-bottom: 100%;
 			position: relative;
@@ -156,19 +157,7 @@ $darkGray: #212121;
 			background-size: cover;
 			background-position: center;
 		}
-		.title {
-			background-color: rgba(0, 0, 0, 0.6);
-			position: absolute;
-			top: 10px;
-			width: calc(100% - 20px);
-			padding: 10px;
-			h4 {
-				font-weight: 600;
-				margin: 0px;
-				color: white;
-				text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
-			}
-		}
+		
 	}
 }
 @media (max-width: 690px) {

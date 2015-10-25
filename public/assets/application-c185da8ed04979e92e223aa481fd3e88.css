@@ -1,0 +1,502 @@
+.lightbox-nav{position:relative;margin-bottom:12px;text-align:center;font-size:0}.lightbox-nav .btn-group{vertical-align:top}.lightbox-nav .close{position:absolute;top:0;right:0}.lightbox-image-container{position:relative;text-align:center}.lightbox-image-caption{position:absolute;top:0;left:0;margin:.5em .9em;color:#000;font-size:1.5em;font-weight:700;text-align:left;text-shadow:.1em .1em .2em rgba(255,255,255,.5)}.lightbox-image-caption span{padding-top:.1em;padding-bottom:.1em;background-color:rgba(255,255,255,.75);box-shadow:.4em 0 0 rgba(255,255,255,.75),-.4em 0 0 rgba(255,255,255,.75)}
+.toast-title{font-weight:700}.toast-message{word-wrap:break-word}.toast-message a,.toast-message label{color:#fff}.toast-message a:hover{color:#ccc;text-decoration:none}.toast-close-button{position:relative;right:-.3em;top:-.3em;float:right;font-size:20px;font-weight:700;color:#fff;-webkit-text-shadow:0 1px 0 #fff;text-shadow:0 1px 0 #fff;opacity:.8}.toast-top-center,.toast-top-full-width{top:0;right:0;width:100%}.toast-close-button:focus,.toast-close-button:hover{color:#000;text-decoration:none;cursor:pointer;opacity:.4}button.toast-close-button{padding:0;cursor:pointer;background:0 0;border:0;-webkit-appearance:none}.toast-bottom-center{bottom:0;right:0;width:100%}.toast-bottom-full-width{bottom:0;right:0;width:100%}.toast-top-left{top:9pt;left:9pt}.toast-top-right{top:9pt;right:9pt}.toast-bottom-right{right:9pt;bottom:9pt}.toast-bottom-left{bottom:9pt;left:9pt}#toast-container{position:fixed;z-index:999999}#toast-container *{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}#toast-container>div{position:relative;overflow:hidden;margin:0 0 6px;padding:15px 15px 15px 50px;width:300px;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;background-position:15px center;background-repeat:no-repeat;-moz-box-shadow:0 0 9pt #999;-webkit-box-shadow:0 0 9pt #999;box-shadow:0 0 9pt #999;color:#fff;opacity:.8}#toast-container>:hover{-moz-box-shadow:0 0 9pt #000;-webkit-box-shadow:0 0 9pt #000;box-shadow:0 0 9pt #000;opacity:1;cursor:pointer}#toast-container>.toast-info{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGwSURBVEhLtZa9SgNBEMc9sUxxRcoUKSzSWIhXpFMhhYWFhaBg4yPYiWCXZxBLERsLRS3EQkEfwCKdjWJAwSKCgoKCcudv4O5YLrt7EzgXhiU3/4+b2ckmwVjJSpKkQ6wAi4gwhT+z3wRBcEz0yjSseUTrcRyfsHsXmD0AmbHOC9Ii8VImnuXBPglHpQ5wwSVM7sNnTG7Za4JwDdCjxyAiH3nyA2mtaTJufiDZ5dCaqlItILh1NHatfN5skvjx9Z38m69CgzuXmZgVrPIGE763Jx9qKsRozWYw6xOHdER+nn2KkO+Bb+UV5CBN6WC6QtBgbRVozrahAbmm6HtUsgtPC19tFdxXZYBOfkbmFJ1VaHA1VAHjd0pp70oTZzvR+EVrx2Ygfdsq6eu55BHYR8hlcki+n+kERUFG8BrA0BwjeAv2M8WLQBtcy+SD6fNsmnB3AlBLrgTtVW1c2QN4bVWLATaIS60J2Du5y1TiJgjSBvFVZgTmwCU+dAZFoPxGEEs8nyHC9Bwe2GvEJv2WXZb0vjdyFT4Cxk3e/kIqlOGoVLwwPevpYHT+00T+hWwXDf4AJAOUqWcDhbwAAAAASUVORK5CYII=)!important}#toast-container>.toast-error{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHOSURBVEhLrZa/SgNBEMZzh0WKCClSCKaIYOED+AAKeQQLG8HWztLCImBrYadgIdY+gIKNYkBFSwu7CAoqCgkkoGBI/E28PdbLZmeDLgzZzcx83/zZ2SSXC1j9fr+I1Hq93g2yxH4iwM1vkoBWAdxCmpzTxfkN2RcyZNaHFIkSo10+8kgxkXIURV5HGxTmFuc75B2RfQkpxHG8aAgaAFa0tAHqYFfQ7Iwe2yhODk8+J4C7yAoRTWI3w/4klGRgR4lO7Rpn9+gvMyWp+uxFh8+H+ARlgN1nJuJuQAYvNkEnwGFck18Er4q3egEc/oO+mhLdKgRyhdNFiacC0rlOCbhNVz4H9FnAYgDBvU3QIioZlJFLJtsoHYRDfiZoUyIxqCtRpVlANq0EU4dApjrtgezPFad5S19Wgjkc0hNVnuF4HjVA6C7QrSIbylB+oZe3aHgBsqlNqKYH48jXyJKMuAbiyVJ8KzaB3eRc0pg9VwQ4niFryI68qiOi3AbjwdsfnAtk0bCjTLJKr6mrD9g8iq/S/B81hguOMlQTnVyG40wAcjnmgsCNESDrjme7wfftP4P7SP4N3CJZdvzoNyGq2c/HWOXJGsvVg+RA/k2MC/wN6I2YA2Pt8GkAAAAASUVORK5CYII=)!important}#toast-container>.toast-success{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADsSURBVEhLY2AYBfQMgf///3P8+/evAIgvA/FsIF+BavYDDWMBGroaSMMBiE8VC7AZDrIFaMFnii3AZTjUgsUUWUDA8OdAH6iQbQEhw4HyGsPEcKBXBIC4ARhex4G4BsjmweU1soIFaGg/WtoFZRIZdEvIMhxkCCjXIVsATV6gFGACs4Rsw0EGgIIH3QJYJgHSARQZDrWAB+jawzgs+Q2UO49D7jnRSRGoEFRILcdmEMWGI0cm0JJ2QpYA1RDvcmzJEWhABhD/pqrL0S0CWuABKgnRki9lLseS7g2AlqwHWQSKH4oKLrILpRGhEQCw2LiRUIa4lwAAAABJRU5ErkJggg==)!important}#toast-container>.toast-warning{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGYSURBVEhL5ZSvTsNQFMbXZGICMYGYmJhAQIJAICYQPAACiSDB8AiICQQJT4CqQEwgJvYASAQCiZiYmJhAIBATCARJy+9rTsldd8sKu1M0+dLb057v6/lbq/2rK0mS/TRNj9cWNAKPYIJII7gIxCcQ51cvqID+GIEX8ASG4B1bK5gIZFeQfoJdEXOfgX4QAQg7kH2A65yQ87lyxb27sggkAzAuFhbbg1K2kgCkB1bVwyIR9m2L7PRPIhDUIXgGtyKw575yz3lTNs6X4JXnjV+LKM/m3MydnTbtOKIjtz6VhCBq4vSm3ncdrD2lk0VgUXSVKjVDJXJzijW1RQdsU7F77He8u68koNZTz8Oz5yGa6J3H3lZ0xYgXBK2QymlWWA+RWnYhskLBv2vmE+hBMCtbA7KX5drWyRT/2JsqZ2IvfB9Y4bWDNMFbJRFmC9E74SoS0CqulwjkC0+5bpcV1CZ8NMej4pjy0U+doDQsGyo1hzVJttIjhQ7GnBtRFN1UarUlH8F3xict+HY07rEzoUGPlWcjRFRr4/gChZgc3ZL2d8oAAAAASUVORK5CYII=)!important}#toast-container.toast-bottom-center>div,#toast-container.toast-top-center>div{width:300px;margin:auto}#toast-container.toast-bottom-full-width>div,#toast-container.toast-top-full-width>div{width:96%;margin:auto}.toast{background-color:#030303}.toast-success{background-color:#51a351}.toast-error{background-color:#bd362f}.toast-info{background-color:#2f96b4}.toast-warning{background-color:#f89406}.toast-progress{position:absolute;left:0;bottom:0;height:4px;background-color:#000;opacity:.4}.toast{opacity:1!important}.toast.ng-enter{opacity:0!important;transition:opacity .3s linear}.toast.ng-enter.ng-enter-active{opacity:1!important}.toast.ng-leave{opacity:1;transition:opacity .3s linear}.toast.ng-leave.ng-leave-active{opacity:0!important}@media all and (max-width:240px){#toast-container>div{padding:8px 8px 8px 50px;width:11em}#toast-container .toast-close-button{right:-.2em;top:-.2em}}@media all and (min-width:241px) and (max-width:480px){#toast-container>div{padding:8px 8px 8px 50px;width:18em}#toast-container .toast-close-button{right:-.2em;top:-.2em}}@media all and (min-width:481px) and (max-width:768px){#toast-container>div{padding:15px 15px 15px 50px;width:25em}}
+/* ================================================== */
+/* ====================== FONT ====================== */
+/* ================================================== */
+/* line 10, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+* {
+  font-family: Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* ================================================== */
+/* ================== MAIN BUTTON =================== */
+/* ================================================== */
+/* line 18, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+.btn-danger {
+  background: #C21221;
+}
+
+/* ================================================== */
+/* ===================== HEADER ===================== */
+/* ================================================== */
+/* line 26, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#header {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px 10px 20px;
+  width: 100%;
+}
+/* line 30, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#header img {
+  height: 55px;
+  margin-left: 40px;
+  cursor: pointer;
+}
+/* line 35, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#header #links {
+  float: right;
+  padding-top: 15px;
+}
+/* line 38, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#header #links a {
+  padding-right: 40px;
+  font-size: large;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+/* line 44, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#header #links a .fa {
+  padding-right: 10px;
+}
+/* line 48, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#header #links a:hover {
+  color: #C21221;
+  text-shadow: 1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white;
+  text-decoration: none;
+}
+
+/* line 55, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#subheader {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px 10px 20px;
+  width: 100%;
+  display: none;
+  text-align: center;
+}
+/* line 61, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#subheader a:first-child {
+  padding-right: 20px;
+}
+/* line 64, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#subheader a {
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+/* line 68, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#subheader a .fa {
+  padding-right: 10px;
+}
+/* line 72, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#subheader a:hover {
+  color: #C21221;
+  text-shadow: 1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white;
+  text-decoration: none;
+}
+
+@media (max-width: 690px) {
+  /* line 79, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+  #header {
+    text-align: center;
+  }
+  /* line 81, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+  #header img {
+    margin: 0px auto;
+  }
+  /* line 84, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+  #header #links {
+    display: none;
+  }
+
+  /* line 88, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+  #subheader {
+    display: block;
+  }
+}
+/* ================================================== */
+/* ===================== FOOTER ===================== */
+/* ================================================== */
+/* line 97, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#footer {
+  background: #C21221;
+  padding: 15px 50px 15px 50px;
+  width: 100%;
+  color: white;
+  font-size: small;
+}
+/* line 103, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#footer span {
+  float: right;
+}
+/* line 105, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#footer span .fa {
+  padding-right: 10px;
+}
+/* line 108, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#footer span .fa-phone, #footer span .fa-envelope {
+  padding-left: 30px;
+}
+/* line 112, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#footer .emailLink:hover {
+  color: #212121;
+}
+/* line 115, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#footer a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  /* line 121, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+  #footer {
+    text-align: center;
+  }
+  /* line 123, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+  #footer span {
+    padding-top: 5px;
+    display: block;
+    float: none;
+  }
+  /* line 127, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+  #footer span .fa {
+    padding-left: 0px;
+  }
+}
+/* ====================================================== */
+/* ===================== EMAIL LINK ===================== */
+/* ====================================================== */
+/* line 138, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+.emailLink {
+  cursor: pointer;
+}
+
+/* ====================================================== */
+/* ====================== OUR WORK ====================== */
+/* ====================================================== */
+/* line 146, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#ourWork {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+/* line 149, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#ourWork .picBox {
+  padding: 10px;
+}
+/* line 151, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#ourWork .picBox .box {
+  cursor: zoom-in;
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 690px) {
+  /* line 164, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+  #ourWork {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  /* line 167, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+  #ourWork .picBox {
+    padding: 5px 10px 5px 10px;
+  }
+  /* line 169, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+  #ourWork .picBox .title {
+    top: 5px;
+  }
+}
+/* ====================================================== */
+/* =================== REQUEST QUOTE ==================== */
+/* ====================================================== */
+/* line 180, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#requestQuote {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+/* line 183, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#requestQuote h3 {
+  font-weight: bold;
+  color: #C21221;
+  text-align: center;
+  margin-top: 0px;
+}
+/* line 190, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#requestQuote #formCol form {
+  padding: 20px;
+  background: #f1f1f1;
+}
+/* line 193, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#requestQuote #formCol form .input-group {
+  width: 100%;
+  margin-bottom: 5px;
+}
+/* line 196, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#requestQuote #formCol form .input-group .input-group-addon {
+  width: 40px;
+  background: #545454;
+  color: white;
+}
+/* line 202, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#requestQuote #formCol form table {
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+/* line 206, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#requestQuote #formCol form table td:first-child {
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #545454;
+  background: white;
+  width: 17px;
+  height: 17px;
+}
+/* line 214, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#requestQuote #formCol form table td:last-child {
+  padding-left: 8px;
+  font-size: larger;
+}
+/* line 219, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#requestQuote #formCol form button .fa {
+  margin-right: 5px;
+}
+/* line 222, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#requestQuote #formCol form .filenames {
+  font-size: smaller;
+}
+/* line 225, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#requestQuote #formCol form button:last-child {
+  margin-top: 10px;
+  width: 100%;
+}
+/* line 232, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#requestQuote #contactCol #map {
+  width: 100%;
+  height: 350px;
+}
+/* line 236, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#requestQuote #contactCol span {
+  font-size: smaller;
+  display: block;
+  padding-bottom: 5px;
+}
+/* line 240, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#requestQuote #contactCol span .fa {
+  text-align: center;
+  width: 25px;
+  font-weight: bold;
+  color: #C21221;
+  padding-right: 10px;
+}
+/* line 248, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#requestQuote #contactCol .emailLink:hover {
+  color: #C21221;
+}
+/* line 250, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#requestQuote #contactCol .emailLink:hover .fa {
+  color: #212121;
+}
+
+/* Hide contact us column */
+@media (max-width: 1200px) {
+  /* line 259, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+  #requestQuote #contactCol {
+    display: none;
+  }
+}
+/* ====================================================== */
+/* ======================== ROOT ======================== */
+/* ====================================================== */
+/* line 269, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#root {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+/* line 273, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#root #firstRow {
+  height: 600px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://d2oku4nz4qgjsk.cloudfront.net/10.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+/* line 280, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#root #firstRow .jumbotron {
+  padding-top: 150px;
+  background-color: transparent;
+  text-align: center;
+}
+/* line 284, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#root #firstRow .jumbotron h1 {
+  font-weight: bold;
+  color: #C21221;
+  text-shadow: 1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white;
+}
+/* line 289, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#root #firstRow .jumbotron p {
+  color: white;
+  font-weight: bold;
+}
+/* line 296, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#root #secondRow {
+  margin-top: 40px;
+}
+/* line 298, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#root #secondRow img {
+  width: 100%;
+}
+/* line 301, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#root #secondRow h1 {
+  margin-top: 0px;
+  color: #C21221;
+  font-weight: bold;
+}
+/* line 306, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#root #secondRow p {
+  text-align: justify;
+}
+/* line 311, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#root #dividerRow {
+  margin-top: 40px;
+  height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://d2oku4nz4qgjsk.cloudfront.net/7.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+/* line 319, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#root #dividerRow h1 {
+  margin-top: 130px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: white;
+}
+/* line 327, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#root #thirdRow {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+/* line 330, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#root #thirdRow img {
+  width: 100%;
+}
+/* line 333, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#root #thirdRow .content {
+  background: #f1f1f1;
+  padding: 10px;
+}
+/* line 336, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#root #thirdRow .content h2 {
+  margin-top: 0px;
+  color: #C21221;
+  font-weight: bold;
+}
+/* line 341, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#root #thirdRow .content p {
+  text-align: justify;
+  margin-bottom: 0px;
+}
+/* line 346, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#root #thirdRow button {
+  margin-top: 40px;
+  width: 100%;
+}
+/* line 352, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#root #mapRow {
+  padding: 0px;
+  margin-bottom: 40px;
+}
+/* line 355, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#root #mapRow .overlay {
+  background: transparent;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  top: 400px;
+  margin-top: -400px;
+}
+/* line 363, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#root #mapRow #map {
+  height: 400px;
+  width: 100%;
+}
+/* line 368, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#root #minMapRow {
+  background: url("http://maps.googleapis.com/maps/api/staticmap?center=345+market+street,+kenilworth,+nj&zoom=15&scale=false&size=800x400&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xc21b0c%7C345+market+street,+kenilworth,+nj");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: none;
+  margin-bottom: 40px;
+}
+/* line 376, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#root #minMapRow #addressHolder {
+  padding-top: 300px;
+  padding-left: calc((100% - 200px)/2);
+}
+/* line 379, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#root #minMapRow #addressHolder #address {
+  text-align: center;
+  width: 200px;
+  padding: 20px;
+  color: #C21221;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+/* line 390, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#root #statsRow {
+  margin-bottom: 40px;
+}
+/* line 392, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#root #statsRow .col-sm-3 {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+/* line 395, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#root #statsRow .col-sm-3 .box {
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 100%;
+  background: #f1f1f1;
+}
+/* line 401, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+#root #statsRow .col-sm-3 .box h2 {
+  margin: 0px 0px 15px 0px;
+  color: #C21221;
+  font-weight: bold;
+}
+
+/* Adjust h1 divider row */
+/* Add padding between boxes on thirdRow and statsRow */
+/* Show static map */
+@media (max-width: 768px) {
+  /* line 417, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+  #root #dividerRow h1 {
+    padding-top: 100px;
+  }
+
+  /* line 423, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+  #thirdRow .col-sm-4 {
+    margin-bottom: 20px;
+  }
+
+  /* line 428, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+  #statsRow .col-sm-3 {
+    margin-bottom: 20px;
+  }
+
+  /* line 432, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+  #mapRow {
+    display: none;
+  }
+
+  /* line 435, /Users/WilsonLee/Desktop/HenryPrecisionMachining/app/assets/stylesheets/main.css.scss */
+  #minMapRow {
+    display: block !important;
+  }
+}
+/*
+
+
+
+
+
+*/
