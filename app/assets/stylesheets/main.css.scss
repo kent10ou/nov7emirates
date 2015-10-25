@@ -56,6 +56,7 @@ $darkGray: #212121;
 	background-color: rgba(0, 0, 0, 0.6);
 	padding: 10px;
 	display: none;
+	width: 100%;
 	table {
 		width: 100%;
 		font-weight: bold;
@@ -320,6 +321,17 @@ $darkGray: #212121;
 /* ====================================================== */
 /* ======================== ROOT ======================== */
 /* ====================================================== */
+#rootHeader {
+	#header, #subheader {
+		position: absolute;
+		z-index: 999;
+	}
+}
+@media (max-width: 690px) {
+	#rootHeader #subheader {
+		margin-top: 75px;
+	}
+}
 #root {
 	margin: 0px;
 	padding: 0px;
