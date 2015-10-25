@@ -1,6 +1,7 @@
 // Declare application & add dependencies
 var app = angular.module('HenryPrecisionMachining', [
 	'angulartics', // Google Analytics
+	'angularVideoBg', // Background video player
 	'bootstrapLightbox', // Lightbox
 	'ngFileUpload', // Angular file upload
 	'ngTouch', // Allow for Angular Touch

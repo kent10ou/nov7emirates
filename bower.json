@@ -16,6 +16,7 @@
 			"angular-toastr": "latest",
 			"angular-touch": "latest",
 			"angular-ui-router": "latest",
+			"angular-video-bg": "latest",
 			"modernizr": "latest",
 			"ng-file-upload": "latest"
 		}
