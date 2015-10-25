@@ -2,8 +2,12 @@
 //= require angular-touch/angular-touch.min
 //= require angular-bootstrap/ui-bootstrap.min
 //= require angular-bootstrap/ui-bootstrap-tpls.min
+//= require angular-toastr/dist/angular-toastr.min
+//= require angular-toastr/dist/angular-toastr.tpls.min
 //= require angular-ui-router/release/angular-ui-router.min
 //= require angulartics/dist/angulartics.min
+//= require ng-file-upload/ng-file-upload.min
+//= require ng-file-upload/ng-file-upload-shim.min
 //= require angular-rails-templates
 //= require_tree ../templates
 //= require_tree ./HenryPrecisionMachining

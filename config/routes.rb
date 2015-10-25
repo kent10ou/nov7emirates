@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
-  root 'application#index'
-  get '*path' => 'application#index'
+	namespace :api, defaults: { format: 'json' } do
+		resources :requests
+	end
+	
+	root 'application#index'
+	get '*path' => 'application#index'
 
 end

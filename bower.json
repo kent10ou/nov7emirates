@@ -12,9 +12,11 @@
 			"angulartics": "latest",
 			"angular-animate": "latest",
 			"angular-bootstrap": "latest",
+			"angular-toastr": "latest",
 			"angular-touch": "latest",
 			"angular-ui-router": "latest",
-			"modernizr": "latest"
+			"modernizr": "latest",
+			"ng-file-upload": "latest"
 		}
 	}
 }

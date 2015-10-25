@@ -15,6 +15,7 @@ gem 'unicorn-worker-killer' #Unicorn worker killer
 gem 'bower-rails' #dependency manager
 gem 'angular-rails-templates' #angular template optimizer
 gem 'responders' #respond with actions
+gem 'sendgrid-ruby' #Send Grid
 gem 'rack-cors', :require => 'rack/cors' #CORS
 
 group :development do

@@ -227,7 +227,13 @@ $darkGray: #212121;
 					font-size: larger
 				}
 			}
-			button {
+			button .fa {
+				margin-right: 5px;
+			}
+			.filenames {
+				font-size: smaller;
+			}
+			button:last-child {
 				margin-top: 10px;
 				width: 100%;
 			}
