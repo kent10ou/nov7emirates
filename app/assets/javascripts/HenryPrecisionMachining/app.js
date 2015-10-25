@@ -9,3 +9,7 @@ var app = angular.module('HenryPrecisionMachining', [
 	'ui.bootstrap', // Bootrap JS functions built for Angular
 	'ui.router' // Router
 ])
+
+app.config(function (LightboxProvider) {
+	LightboxProvider.templateUrl = 'lightbox.html'
+})

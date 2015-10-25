@@ -133,6 +133,37 @@ $darkGray: #212121;
 
 
 /* ====================================================== */
+/* ====================== LIGHTBOX ====================== */
+/* ====================================================== */
+.modal-content {
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	box-shadow: none;
+}
+#lightBox {
+	padding: 0px 20px 0px 20px;
+	img {
+		margin-top: 33px;
+		width: 100% !important;
+	}
+	.fa-chevron-left {
+		color: white;
+		text-shadow: 1px 1px 0 $darkGray, -1px -1px 0 $darkGray, 1px -1px 0 $darkGray, -1px 1px 0 $darkGray;
+		position: absolute;
+		top: calc((100% - 60px)/2);
+		left: 20px;
+	}
+	.fa-chevron-right {
+		color: white;
+		text-shadow: 1px 1px 0 $darkGray, -1px -1px 0 $darkGray, 1px -1px 0 $darkGray, -1px 1px 0 $darkGray;
+		position: absolute;
+		top: calc((100% - 60px)/2);
+		right: 20px;
+	}
+}
+
+
+/* ====================================================== */
 /* ===================== EMAIL LINK ===================== */
 /* ====================================================== */
 .emailLink {
@@ -157,7 +188,7 @@ $darkGray: #212121;
 			background-size: cover;
 			background-position: center;
 		}
-		
+
 	}
 }
 @media (max-width: 690px) {

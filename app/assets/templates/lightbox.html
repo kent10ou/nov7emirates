@@ -1,0 +1,30 @@
+<div class='modal-body' id='lightBox' ng-swipe-left='Lightbox.nextImage()' ng-swipe-right='Lightbox.prevImage()'>
+	<div class='lightbox-image-container'>
+		<!-- Caption -->
+		<div class='lightbox-image-caption'>
+			<span>{{Lightbox.imageCaption}}</span>
+		</div>
+
+		<i class='fa fa-4x fa-chevron-right' ng-click='Lightbox.nextImage()'></i>
+		<i class='fa fa-4x fa-chevron-left' ng-click='Lightbox.prevImage()'></i>
+
+		<!-- Image -->
+		<img ng-if='!Lightbox.isVideo(Lightbox.image)' lightbox-src='{{Lightbox.imageUrl}}'>
+
+		<!-- Video -->
+		<div ng-if='Lightbox.isVideo(Lightbox.image)' class='embed-responsive embed-responsive-16by9'>
+			<!-- video file embedded directly -->
+			<video ng-if='!Lightbox.isSharedVideo(Lightbox.image)' lightbox-src='{{Lightbox.imageUrl}}' controls autoplay='true'></video>
+
+			<!-- Video embedded with an external service using 'ng-videosharing-embed' -->
+			<embed-video ng-if='Lightbox.isSharedVideo(Lightbox.image)'
+				lightbox-src='{{Lightbox.imageUrl}}'
+				ng-href='{{Lightbox.imageUrl}}'
+				iframe-id='lightbox-video'
+				class='embed-responsive-item'
+			>
+				<a ng-href='{{Lightbox.imageUrl}}'>Watch video</a>
+			</embed-video>
+		</div>
+	</div>
+</div>
