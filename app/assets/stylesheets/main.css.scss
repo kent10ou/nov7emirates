@@ -212,13 +212,21 @@ $darkGray: #212121;
 	.picBox {
 		padding: 10px;
 		.box {
-			cursor: zoom-in;
+			
 			width: 100%;
 			padding-bottom: 100%;
 			position: relative;
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: center;
+		}
+	}
+}
+/* Show hover effects if screen is wide enough */
+@media (min-width: 989px) {
+	#ourWork {
+		.box {
+			cursor: zoom-in;
 		}
 		.box:hover > .overlay {
 			width: 100%;
