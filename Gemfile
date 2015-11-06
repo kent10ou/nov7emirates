@@ -8,7 +8,6 @@ gem 'yui-compressor' #CSS compression
 gem 'uglifier' #compacts JS files
 gem 'jbuilder' #allows for building JSON structures
 gem 'figaro' #allows for encrypted ENV variables
-gem 'mandrill-api' #used to send out email
 gem 'pg' #Postgresql
 gem 'unicorn' #alternative web server
 gem 'unicorn-worker-killer' #Unicorn worker killer
@@ -16,7 +15,6 @@ gem 'bower-rails' #dependency manager
 gem 'angular-rails-templates' #angular template optimizer
 gem 'responders' #respond with actions
 gem 'sendgrid-ruby' #Send Grid
-gem 'rack-cors', :require => 'rack/cors' #CORS
 
 group :development do
   gem 'guard', 			   :require => false
