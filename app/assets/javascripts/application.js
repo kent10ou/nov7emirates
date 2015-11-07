@@ -8,8 +8,7 @@
 //= require angulartics/dist/angulartics.min
 //= require ng-file-upload/ng-file-upload.min
 //= require ng-file-upload/ng-file-upload-shim.min
-//= require angular-bootstrap-lightbox/dist/angular-bootstrap-lightbox.min
 //= require angular-video-bg/angular-video-bg.min
 //= require angular-rails-templates
 //= require_tree ../templates
-//= require_tree ./HenryPrecisionMachining
+//= require_tree ./Emirates

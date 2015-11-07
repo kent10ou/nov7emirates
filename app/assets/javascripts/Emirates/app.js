@@ -1,8 +1,7 @@
 // Declare application & add dependencies
-var app = angular.module('HenryPrecisionMachining', [
+var app = angular.module('Emirates', [
 	'angulartics', // Google Analytics
 	'angularVideoBg', // Background video player
-	'bootstrapLightbox', // Lightbox
 	'ngFileUpload', // Angular file upload
 	'ngTouch', // Allow for Angular Touch
 	'templates', // Allow for templates
@@ -10,7 +9,3 @@ var app = angular.module('HenryPrecisionMachining', [
 	'ui.bootstrap', // Bootrap JS functions built for Angular
 	'ui.router' // Router
 ])
-
-app.config(['LightboxProvider', function (LightboxProvider) {
-	LightboxProvider.templateUrl = 'lightbox.html'
-}])

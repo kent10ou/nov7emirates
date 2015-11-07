@@ -5,7 +5,7 @@ require 'csv'
 
 Bundler.require(*Rails.groups)
 
-module HenryPrecisionMachining
+module Emirates
     class Application < Rails::Application
         config.assets.precompile << %r(.*.(?:eot|svg|ttf|woff)$)
     end
